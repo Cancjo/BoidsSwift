@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="V8R-wo-eIY">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--Tune View Controller-->
+        <scene sceneID="v4x-4y-hsK">
+            <objects>
+                <viewController id="E4D-N3-Cjk" customClass="TuneViewController" customModule="BoidsSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ayy-a6-SaE"/>
+                        <viewControllerLayoutGuide type="bottom" id="Omx-Rg-B8c"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SKH-tt-9xK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Velocity restriction" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DZf-Qy-Eg3" userLabel="Velocity Restriction Label">
+                                <rect key="frame" x="20" y="64" width="560" height="20"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="qNk-vK-lf4">
+                                <rect key="frame" x="18" y="84" width="564" height="31"/>
+                                <animations/>
+                                <connections>
+                                    <action selector="velocityRestrictionAction:" destination="E4D-N3-Cjk" eventType="valueChanged" id="IhQ-BC-Z1S"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flock size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RTc-5a-kWi" userLabel="Flock Size Label">
+                                <rect key="frame" x="20" y="135" width="560" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="3e0-h2-CjB" userLabel="Flock Size Slider">
+                                <rect key="frame" x="18" y="156" width="564" height="31"/>
+                                <animations/>
+                                <connections>
+                                    <action selector="flockSizeAction:" destination="E4D-N3-Cjk" eventType="valueChanged" id="LkS-Yi-f7N"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Destination distance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="87V-zT-0p3" userLabel="Destination Distance Label">
+                                <rect key="frame" x="20" y="207" width="560" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="zrd-cI-giK" userLabel="Destination Distance Slider">
+                                <rect key="frame" x="18" y="228" width="564" height="31"/>
+                                <animations/>
+                                <connections>
+                                    <action selector="destinationDistanceAction:" destination="E4D-N3-Cjk" eventType="valueChanged" id="Ze0-va-EUC"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Neighbor distance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZhO-Cz-0MH" userLabel="Neighbor Distance Label">
+                                <rect key="frame" x="20" y="279" width="560" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="d0l-pS-tMI" userLabel="Neighbor Distance Slider">
+                                <rect key="frame" x="18" y="300" width="564" height="31"/>
+                                <animations/>
+                                <connections>
+                                    <action selector="neighborDistanceAction:" destination="E4D-N3-Cjk" eventType="valueChanged" id="06J-ba-o7w"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Velocity gain" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcL-mm-jaK" userLabel="Stiffness Label">
+                                <rect key="frame" x="20" y="351" width="560" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="FpH-86-3Lj" userLabel="Stiffness Slider">
+                                <rect key="frame" x="18" y="372" width="564" height="31"/>
+                                <animations/>
+                                <connections>
+                                    <action selector="stiffnessAction:" destination="E4D-N3-Cjk" eventType="valueChanged" id="OIk-Op-1Au"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZhO-Cz-0MH" firstAttribute="leading" secondItem="d0l-pS-tMI" secondAttribute="leading" id="0OZ-t8-UjG"/>
+                            <constraint firstItem="FpH-86-3Lj" firstAttribute="top" secondItem="d0l-pS-tMI" secondAttribute="bottom" constant="42" id="0qe-m7-W4j"/>
+                            <constraint firstItem="zrd-cI-giK" firstAttribute="top" secondItem="87V-zT-0p3" secondAttribute="bottom" id="2tv-2X-CIE"/>
+                            <constraint firstItem="FpH-86-3Lj" firstAttribute="trailing" secondItem="d0l-pS-tMI" secondAttribute="trailing" id="3xi-n7-Y6Q"/>
+                            <constraint firstItem="d0l-pS-tMI" firstAttribute="top" secondItem="ZhO-Cz-0MH" secondAttribute="bottom" id="53S-cj-ZjS"/>
+                            <constraint firstItem="3e0-h2-CjB" firstAttribute="top" secondItem="RTc-5a-kWi" secondAttribute="bottom" id="5te-Pf-ZuQ"/>
+                            <constraint firstItem="zrd-cI-giK" firstAttribute="trailing" secondItem="3e0-h2-CjB" secondAttribute="trailing" id="7RN-2s-VAy"/>
+                            <constraint firstItem="RTc-5a-kWi" firstAttribute="trailing" secondItem="3e0-h2-CjB" secondAttribute="trailing" id="8gX-Sg-5IQ"/>
+                            <constraint firstItem="zrd-cI-giK" firstAttribute="top" secondItem="3e0-h2-CjB" secondAttribute="bottom" constant="42" id="9qV-wp-Ryc"/>
+                            <constraint firstItem="DZf-Qy-Eg3" firstAttribute="leading" secondItem="qNk-vK-lf4" secondAttribute="leading" id="Azq-Mj-8ES"/>
+                            <constraint firstItem="87V-zT-0p3" firstAttribute="leading" secondItem="zrd-cI-giK" secondAttribute="leading" id="B0K-5H-V9Q"/>
+                            <constraint firstItem="qNk-vK-lf4" firstAttribute="leading" secondItem="SKH-tt-9xK" secondAttribute="leading" constant="20" id="BUV-SF-C6g"/>
+                            <constraint firstItem="RTc-5a-kWi" firstAttribute="leading" secondItem="3e0-h2-CjB" secondAttribute="leading" id="Czt-R9-t0v"/>
+                            <constraint firstItem="d0l-pS-tMI" firstAttribute="top" secondItem="zrd-cI-giK" secondAttribute="bottom" constant="42" id="GXd-bB-ZMh"/>
+                            <constraint firstItem="zrd-cI-giK" firstAttribute="leading" secondItem="3e0-h2-CjB" secondAttribute="leading" id="HE5-87-w50"/>
+                            <constraint firstItem="lcL-mm-jaK" firstAttribute="leading" secondItem="FpH-86-3Lj" secondAttribute="leading" id="J3O-zu-2dt"/>
+                            <constraint firstItem="87V-zT-0p3" firstAttribute="trailing" secondItem="zrd-cI-giK" secondAttribute="trailing" id="JEs-Op-PD3"/>
+                            <constraint firstItem="3e0-h2-CjB" firstAttribute="leading" secondItem="qNk-vK-lf4" secondAttribute="leading" id="KWe-1V-kuB"/>
+                            <constraint firstAttribute="trailing" secondItem="qNk-vK-lf4" secondAttribute="trailing" constant="20" id="SC8-gR-AVe"/>
+                            <constraint firstItem="qNk-vK-lf4" firstAttribute="top" secondItem="DZf-Qy-Eg3" secondAttribute="bottom" id="SnB-hE-UVG"/>
+                            <constraint firstItem="lcL-mm-jaK" firstAttribute="trailing" secondItem="FpH-86-3Lj" secondAttribute="trailing" id="V9y-IG-LD9"/>
+                            <constraint firstItem="3e0-h2-CjB" firstAttribute="top" secondItem="qNk-vK-lf4" secondAttribute="bottom" constant="42" id="cn8-8a-mji"/>
+                            <constraint firstItem="FpH-86-3Lj" firstAttribute="leading" secondItem="d0l-pS-tMI" secondAttribute="leading" id="hHt-C9-NAm"/>
+                            <constraint firstItem="DZf-Qy-Eg3" firstAttribute="trailing" secondItem="qNk-vK-lf4" secondAttribute="trailing" id="hKe-Mw-fi9"/>
+                            <constraint firstItem="ZhO-Cz-0MH" firstAttribute="trailing" secondItem="d0l-pS-tMI" secondAttribute="trailing" id="icm-Sh-RRf"/>
+                            <constraint firstItem="FpH-86-3Lj" firstAttribute="top" secondItem="lcL-mm-jaK" secondAttribute="bottom" id="ipo-XS-X2d"/>
+                            <constraint firstItem="d0l-pS-tMI" firstAttribute="leading" secondItem="zrd-cI-giK" secondAttribute="leading" id="jUs-DA-h4z"/>
+                            <constraint firstItem="qNk-vK-lf4" firstAttribute="top" secondItem="ayy-a6-SaE" secondAttribute="bottom" constant="64" id="no5-xn-Ffa"/>
+                            <constraint firstItem="d0l-pS-tMI" firstAttribute="trailing" secondItem="zrd-cI-giK" secondAttribute="trailing" id="uun-Wu-dIm"/>
+                            <constraint firstItem="3e0-h2-CjB" firstAttribute="trailing" secondItem="qNk-vK-lf4" secondAttribute="trailing" id="uwD-P9-kR4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="destinationDistanceLabel" destination="87V-zT-0p3" id="v1c-DF-ULz"/>
+                        <outlet property="destinationDistanceSlider" destination="zrd-cI-giK" id="ufj-rO-a33"/>
+                        <outlet property="flockSizeLabel" destination="RTc-5a-kWi" id="6Rc-8j-RHm"/>
+                        <outlet property="flockSizeSlider" destination="3e0-h2-CjB" id="lPj-Ev-adR"/>
+                        <outlet property="neighborDistanceLabel" destination="ZhO-Cz-0MH" id="3Gu-rH-Mdu"/>
+                        <outlet property="neighborDistanceSlider" destination="d0l-pS-tMI" id="8Tz-FJ-1f2"/>
+                        <outlet property="stiffnessLabel" destination="lcL-mm-jaK" id="9hP-PN-PNJ"/>
+                        <outlet property="stiffnessSlider" destination="FpH-86-3Lj" id="Kba-Q3-x7A"/>
+                        <outlet property="velocityRestrictionLabel" destination="DZf-Qy-Eg3" id="TIi-0i-qos"/>
+                        <outlet property="velocityRestrictionSlider" destination="qNk-vK-lf4" id="ukI-9k-kt6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XIW-F6-Yku" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="877" y="88"/>
+        </scene>
+        <!--Scene View Controller-->
+        <scene sceneID="d7u-Pz-tJc">
+            <objects>
+                <viewController id="rJ9-op-ZYB" customClass="SceneViewController" customModule="BoidsSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ods-df-DLe"/>
+                        <viewControllerLayoutGuide type="bottom" id="nZn-Gl-NFa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BNp-Iy-iJF" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="kUV-dm-H3r" appends="YES" id="f62-oq-FgV"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="skView" destination="BNp-Iy-iJF" id="vej-TX-d3z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JtO-Nx-o4E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="kUV-dm-H3r">
+                    <connections>
+                        <action selector="panGestureAction:" destination="rJ9-op-ZYB" id="6y5-P7-oil"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="877" y="797"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="Eha-dr-Toy">
+            <objects>
+                <splitViewController id="V8R-wo-eIY" customClass="RootViewController" customModule="BoidsSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="rJ9-op-ZYB" kind="relationship" relationship="detailViewController" id="LO2-M2-iCl"/>
+                        <segue destination="E4D-N3-Cjk" kind="relationship" relationship="masterViewController" id="6w1-00-1q2"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pcq-bF-s4D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="57" y="467"/>
+        </scene>
+    </scenes>
+</document>
